@@ -1,0 +1,96 @@
+/* --- Centrer le formulaire --- */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* --- Carte du formulaire --- */
+.form-card {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+/* --- Titre du formulaire --- */
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* --- Groupe d'un champ --- */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+/* --- Label d'un champ --- */
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* --- Inputs / Select --- */
+.form-input,
+.form-select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+/* Effet focus sur les champs */
+.form-input:focus,
+.form-select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* --- Bouton principal --- */
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease, transform 0.1s;
+}
+
+/* Effet hover */
+.form-button:hover {
+  background-color: #1e4ecd;
+}
+
+/* Effet clic */
+.form-button:active {
+  transform: scale(0.97);
+}
+
+/* --- CURSEUR main (pointer) pour tous les boutons et liens d'action --- */
+button,
+.form-button,
+.text-blue-600,
+.text-red-600 {
+  cursor: pointer;
+}
+
+/* Couleurs pour les liens Modifier et Supprimer */
+.text-blue-600:hover {
+  text-decoration: underline;
+}
+
+.text-red-600:hover {
+  text-decoration: underline;
+}
